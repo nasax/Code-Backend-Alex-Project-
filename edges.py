@@ -1,6 +1,12 @@
+"""
+Module for retreiving edges
+"""
+
 import cv2
-import numpy as np
-# Gets image edges
-def get_edges(img):
-    edgs = cv2.Canny(img)
-    return edgs
+
+def get_edges(image):
+    """
+    Retreives potential edges from image using the Canny edge detector
+    """
+    edges = cv2.Canny(image)
+    return edges
