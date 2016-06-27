@@ -13,6 +13,9 @@ _DEFAULT_HEIGHT = 1280
 def resize(image, width=_DEFAULT_WIDTH, height=_DEFAULT_HEIGHT):
     """
 	Resizes image to given dimensions, width, height, which should be positive integers
+	image - A numpy array representing the image
+	width - A positive integer representing rescale width
+	height - A positive integer representing rescale height
     """
     image_resized = cv2.resize(image, (width, height), interpolation=cv2.INTER_CUBIC)
     return image_resized

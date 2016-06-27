@@ -7,6 +7,7 @@ import numpy as np
 def fourier_transform(image):
     """
     2D fourier transform
+    image - A numpy array representing the image
     """
     image_fft = np.fft.fft2(image)
     return image_fft
@@ -14,6 +15,7 @@ def fourier_transform(image):
 def fourier_shift(image):
     """
     Shifted 2D fourier transform
+    image - A numpy array representing the image
     """
     image_fft = np.fft.fft2(image)
     image_fft_shift = np.fft.fftshift(image_fft)
